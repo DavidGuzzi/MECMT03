@@ -22,7 +22,7 @@ se_hat = np.sqrt(var_theta / 100)
 print(f"Estimación del error estándar: {se_hat}")
 
 # Error estándar aproximado del estimador
-se_aprox = np.sqrt(0.24 / 100)
+se_aprox = np.sqrt(0.2379 / 100)
 print(f"Error estándar aproximado del estimador: {se_aprox}")
 
 # Gráfico de la distribución aproximada del EMV

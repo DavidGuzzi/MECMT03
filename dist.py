@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import norm
 
 # Fijar la semilla
-np.random.seed(321)
+np.random.seed(7)
 
 # Generar datos, sampleados de Bern(theta=0.4)
 x = np.random.binomial(n=1, p=0.4, size=100)

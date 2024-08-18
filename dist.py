@@ -52,3 +52,17 @@ plt.xlabel('Valores del Estimador')
 plt.ylabel('Densidad')
 plt.title('Distribución de las Estimaciones Simuladas')
 plt.show()
+#%%
+
+import scipy.stats as stats
+
+# Parámetros
+n = 20 - 1  # grados de libertad
+alpha = 0.05
+x = 1 - alpha / 2  # cuantil
+
+# Calcular el valor de la función de densidad
+valor_pdf = stats.chi2.ppf(x, df=n)
+
+print(f"El valor de la función de densidad chi-cuadrado para n={n} y cuantil={x} es: {valor_pdf}")
+

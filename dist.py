@@ -66,3 +66,16 @@ valor_pdf = stats.chi2.ppf(x, df=n)
 
 print(f"El valor de la función de densidad chi-cuadrado para n={n} y cuantil={x} es: {valor_pdf}")
 
+#%%
+from scipy.stats import expon
+
+# Parámetro lambda
+lambda_value = 35
+
+# Invertir lambda para usarlo con scipy (ya que expon tiene 1/lambda como parámetro)
+
+# Calcular x dado que la CDF es 0.25
+x = expon.ppf(0.25, lambda_value)
+
+# Mostrar el resultado
+print(f"El valor de x para que la CDF sea 0.25 es: {x}")
